@@ -38,7 +38,7 @@ class RestaurantDetailProvider extends ChangeNotifier {
       print(e);
       _state = ResultState.Error;
       notifyListeners();
-      return _message = 'Error --> $e';
+      return _message = Constant.failedLoadRestoDetail;
     }
   }
 }
